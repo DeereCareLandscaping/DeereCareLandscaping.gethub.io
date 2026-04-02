@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<head>
+    }
+
+    button {
+      background: #2e7d32;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -60,8 +65,8 @@
 
 <section class="container" id="contact">
   <h2>Contact Us</h2>
-  <p>Email: info@deerecare.com</p>
-  <p>Phone: (123) 456-7890</p>
+  <p>Email: deerecarelandscaping@gmail.com</p>
+  <p>Phone: 608-671-9597</p>
   <button onclick="alert('Thanks for reaching out! We will contact you soon.')">Request a Quote</button>
 </section>
 
