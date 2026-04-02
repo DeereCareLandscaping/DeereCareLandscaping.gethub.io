@@ -1,29 +1,16 @@
 <!DOCTYPE html>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<div class="hero" id="home">Your Lawn, Perfected</div>
-
-<div class="priceBox">Total: $<span id="price">0</span></div>
-
-<section class="container" id="services">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card" onclick="openPanel('grounds')">
-      <h3>Grounds Work</h3>
-      <p>Routine lawn care & maintenance</p>
-    </div>
-
-    <div class="card" onclick="openPanel('landscape')">
-      <h3>Landscaping Requests</h3>
-      <p>Custom yard transformations & projects</p>
-    </div>
-  </div>
+    I began my journey into business by taking on small jobs and learning what it takes to serve people well.
+  </p>
+  <p>
+    Over time, I went on to start four additional businesses. Through that experience, I sold two and passed
+    one down to my sister, continuing to grow and learn along the way.
+  </p>
+  <p>
+    Today, Deere Care Landscaping represents everything I’ve learned — dedication, quality service, and
+    a commitment to making every customer’s property look its absolute best.
+  </p>
 </section>
 
-<!-- Grounds Panel -->
 <div id="grounds" class="panel">
   <span class="close" onclick="closePanel('grounds')">&times;</span>
   <h3>Grounds Work</h3>
@@ -40,12 +27,9 @@
   <button onclick="sendEmail('groundsText')">Send Request</button>
 </div>
 
-<!-- Landscaping Panel -->
 <div id="landscape" class="panel">
   <span class="close" onclick="closePanel('landscape')">&times;</span>
   <h3>Landscaping Requests</h3>
-  <p>Tell us about your project</p>
-
   <textarea id="largeText" placeholder="Describe your landscaping project..."></textarea>
   <button onclick="sendEmail('largeText')">Send Request</button>
 </div>
@@ -59,6 +43,8 @@
 <footer>
   <p>&copy; 2026 Deere Care Landscaping</p>
 </footer>
+
+</div>
 
 <script>
 let total = 0;
