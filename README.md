@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-</header>
-
-<nav>
   <a href="#home">Home</a>
   <a href="#services">Services</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero" id="home"><h1>Your Lawn, Our Passion</h1></div>
+<div class="hero" id="home">Your Lawn, Perfected</div>
 
 <div class="priceBox">Total: $<span id="price">0</span></div>
 
 <section class="container" id="services">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card" onclick="openPanel('grounds')">Grounds Work</div>
-    <div class="card" onclick="openPanel('large')">Large Ground Changes</div>
+    <div class="card" onclick="openPanel('grounds')">
+      <h3>Grounds Work</h3>
+      <p>Routine lawn care & maintenance</p>
+    </div>
+
+    <div class="card" onclick="openPanel('landscape')">
+      <h3>Landscaping Requests</h3>
+      <p>Custom yard transformations & projects</p>
+    </div>
   </div>
 </section>
 
-<!-- Grounds Work Panel -->
+<!-- Grounds Panel -->
 <div id="grounds" class="panel">
   <span class="close" onclick="closePanel('grounds')">&times;</span>
   <h3>Grounds Work</h3>
-  <p>Prices starting at $20</p>
+  <p>Starting at $20</p>
 
   <label><input type="checkbox" value="10" onchange="updatePrice(this)"> Weedwacking ($10+)</label><br>
   <label><input type="checkbox" value="20" onchange="updatePrice(this)"> Mowing ($20+)</label><br>
@@ -32,16 +36,17 @@
   <label><input type="checkbox" value="15" onchange="updatePrice(this)"> Aerating ($15+)</label><br>
   <label><input type="checkbox" value="30" onchange="updatePrice(this)"> Weed Control ($30+)</label><br>
 
-  <h4>Custom Request</h4>
-  <textarea id="groundsText" placeholder="Describe your needs..."></textarea>
+  <textarea id="groundsText" placeholder="Describe additional details..."></textarea>
   <button onclick="sendEmail('groundsText')">Send Request</button>
 </div>
 
-<!-- Large Work Panel -->
-<div id="large" class="panel">
-  <span class="close" onclick="closePanel('large')">&times;</span>
-  <h3>Large Ground Changes</h3>
-  <textarea id="largeText" placeholder="Describe your project..."></textarea>
+<!-- Landscaping Panel -->
+<div id="landscape" class="panel">
+  <span class="close" onclick="closePanel('landscape')">&times;</span>
+  <h3>Landscaping Requests</h3>
+  <p>Tell us about your project</p>
+
+  <textarea id="largeText" placeholder="Describe your landscaping project..."></textarea>
   <button onclick="sendEmail('largeText')">Send Request</button>
 </div>
 
@@ -76,4 +81,3 @@ function sendEmail(textId){
 
 </body>
 </html>
-
